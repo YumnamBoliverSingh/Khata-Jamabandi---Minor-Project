@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EA_ts_3">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/cv_ea_ts_3"
+
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#990100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/back_ea_ts_3"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="3.5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/back_chapters"
+                app:layout_constraintStart_toStartOf="parent"
+                android:gravity="center_vertical"
+
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="45dp"
+                app:layout_constraintStart_toEndOf="@id/back_ea_ts_3"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="Business Ideas By Sector"
+                android:textSize="16dp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/scv3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_ea_ts_3"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/nAV3"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                app:layout_constraintEnd_toEndOf="parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintTop_toTopOf="parent"
+
+
+                    >
+
+                    <FrameLayout
+                        android:id="@+id/fl_adplaceholder6qrt"
+                        android:layout_width="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nAV3"
+                android:layout_marginTop="15dp"
+                android:id="@+id/lalala3"
+                android:background="#990100"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+
+
+            <!--    ListItem 1-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toBottomOf="@id/lalala3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/LI_C2"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/LI_C1"
+                android:layout_marginTop="10dp"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/mpnbibs1"
+                        android:id="@+id/ivC1"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginBottom="6dp"
+                        />
+
+                    <TextView
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/ivC1"
+                        android:id="@+id/head_tvC1"
+                        android:textSize="17dp"
+
+                        android:textColor="#3f3f3f"
+                        android:text="20 Self-Employment \njobs"
+                        android:layout_marginTop="4dp"
+                        app:layout_constraintTop_toTopOf="@id/ivC1"
+                        />
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintStart_toEndOf="@id/ivC1"
+                        app:layout_constraintTop_toBottomOf="@id/head_tvC1"
+                        android:layout_marginStart="8.5dp"
+                        android:text="@string/SA_stringTB40"
+                        android:textStyle="bold"
+                        android:textColor="#aaaaaa"
+                        android:layout_marginTop="7dp"
+                        android:paddingBottom="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                        android:textSize="10dp"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--    ListItem 2-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toBottomOf="@id/LI_C1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/LI_C3"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/LI_C2"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:src="@drawable/mpnbibs2"
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/ivC2"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginBottom="6dp"
+                        />
+
+                    <TextView
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="180dp"
+
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/ivC2"
+                        android:id="@+id/head_tvC2"
+                        android:textSize="17dp"
+                        android:textColor="#3f3f3f"
+                        android:text="20 Lucrative Pickle \nMaking Business in \nCollege"
+                        android:layout_marginTop="4dp"
+
+                        app:layout_constraintTop_toTopOf="@id/ivC2"
+                        />
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintStart_toEndOf="@id/ivC2"
+                        app:layout_constraintTop_toBottomOf="@id/head_tvC2"
+                        android:layout_marginStart="8.5dp"
+                        android:text="@string/SA_stringTB41"
+                        android:textStyle="bold"
+                        android:textColor="#aaaaaa"
+                        android:layout_marginTop="7dp"
+                        android:paddingBottom="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                        android:textSize="10dp"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--    ListItem 3-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toBottomOf="@id/LI_C2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/LI_C3"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintBottom_toTopOf="@id/LI_C4"
+                android:layout_marginTop="10dp"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/mpnbibs3"
+                        android:id="@+id/ivC3"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginBottom="6dp"
+                        />
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_marginLeft="30dp"
+
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/ivC3"
+                        android:id="@+id/head_tvC3"
+                        android:textSize="17dp"
+                        android:textColor="#3f3f3f"
+                        android:text="HowTo Start an Amazing \nBusiness in College"
+                        android:layout_marginTop="4dp"
+                        app:layout_constraintTop_toTopOf="@id/ivC3"
+
+
+                        />
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintStart_toEndOf="@id/ivC3"
+                        app:layout_constraintTop_toBottomOf="@id/head_tvC3"
+                        android:layout_marginStart="8.5dp"
+                        android:text="@string/SA_stringTB42"
+                        android:textStyle="bold"
+                        android:textColor="#aaaaaa"
+                        android:layout_marginTop="7dp"
+                        android:paddingBottom="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                        android:textSize="10dp"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--    ListItem 4-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toBottomOf="@id/LI_C3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/LI_C4"
+                app:layout_constraintBottom_toTopOf="@id/LI_C5"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/mpnbibs4"
+                        android:id="@+id/ivC4"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginBottom="6dp"
+                        />
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_marginLeft="30dp"
+                        app:layout_constraintStart_toEndOf="@id/ivC4"
+                        android:id="@+id/head_tvC4"
+                        android:layout_height="wrap_content"
+
+                        android:textSize="17dp"
+                        android:textColor="#3f3f3f"
+                        android:text="5 Profitable Tomato\nProcessing Business\nOpportunities"
+                        android:layout_marginTop="4dp"
+
+                        app:layout_constraintTop_toTopOf="@id/ivC4"
+                        />
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintStart_toEndOf="@id/ivC4"
+                        app:layout_constraintTop_toBottomOf="@id/head_tvC4"
+                        android:layout_marginStart="8.5dp"
+                        android:text="@string/SA_stringTB43"
+                        android:textStyle="bold"
+                        android:textColor="#aaaaaa"
+                        android:layout_marginTop="7dp"
+                        android:paddingBottom="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                        android:textSize="10dp"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--    ListItem 5-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toBottomOf="@id/LI_C4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/LI_C6"
+                android:id="@+id/LI_C5"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/mpnbibs5"
+                        android:id="@+id/ivC5"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginBottom="6dp"
+                        />
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/ivC5"
+                        android:id="@+id/head_tvC5"
+
+                        android:textSize="17dp"
+                        android:textColor="#3f3f3f"
+                        android:text="Online Business Ideas\nwith Almost Zero\ninvestment"
+                        android:layout_marginTop="4dp"
+                        app:layout_constraintTop_toTopOf="@id/ivC5"
+                        />
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintStart_toEndOf="@id/ivC5"
+                        app:layout_constraintTop_toBottomOf="@id/head_tvC5"
+                        android:layout_marginStart="8.5dp"
+                        android:text="@string/SA_stringTB44"
+                        android:textStyle="bold"
+                        android:textColor="#aaaaaa"
+                        android:layout_marginTop="7dp"
+                        android:paddingBottom="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                        android:textSize="10dp"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--    ListItem 6-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toBottomOf="@id/LI_C5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/LI_C7"
+                android:id="@+id/LI_C6"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/ivC6"
+                        android:src="@drawable/mpnbibs6"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginBottom="6dp"
+                        />
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/ivC6"
+                        android:id="@+id/head_tvC6"
+                        android:textSize="17dp"
+                        android:textColor="#3f3f3f"
+
+                        android:text="20 Best Home Based\nBusiness"
+                        android:layout_marginTop="4dp"
+                        app:layout_constraintTop_toTopOf="@id/ivC6"
+                        />
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintStart_toEndOf="@id/ivC6"
+                        app:layout_constraintTop_toBottomOf="@id/head_tvC6"
+                        android:layout_marginStart="8.5dp"
+                        android:text="@string/SA_stringTB45"
+                        android:textStyle="bold"
+                        android:textColor="#aaaaaa"
+                        android:layout_marginTop="7dp"
+                        android:paddingBottom="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                        android:textSize="10dp"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--    ListItem 7-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toBottomOf="@id/LI_C6"
+                app:layout_constraintBottom_toTopOf="@id/LI_C8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/LI_C7"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/ivC7"
+                        android:src="@drawable/mpnbibs7"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginBottom="6dp"
+                        />
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/ivC7"
+                        android:id="@+id/head_tvC7"
+                        android:textSize="17dp"
+                        android:textColor="#3f3f3f"
+                        android:text="50 Business Ideas for\nSecondary Income"
+
+                        android:layout_marginTop="4dp"
+                        app:layout_constraintTop_toTopOf="@id/ivC7"
+                        />
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintStart_toEndOf="@id/ivC7"
+                        app:layout_constraintTop_toBottomOf="@id/head_tvC7"
+                        android:layout_marginStart="8.5dp"
+                        android:text="@string/SA_stringTB46"
+                        android:textStyle="bold"
+                        android:textColor="#aaaaaa"
+                        android:layout_marginTop="7dp"
+                        android:paddingBottom="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+
+                        android:textSize="10dp"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--    ListItem 8-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toBottomOf="@id/LI_C7"
+                app:layout_constraintBottom_toTopOf="@id/LI_C9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/LI_C8"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/ivC8"
+                        android:layout_marginStart="6dp"
+                        android:src="@drawable/mpnbibs8"
+                        android:layout_marginBottom="6dp"
+                        />
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/ivC8"
+                        android:id="@+id/head_tvC8"
+                        android:textSize="17dp"
+                        android:textColor="#3f3f3f"
+                        android:text="10 Profitable Milling \nBusiness Opportunities"
+                        android:layout_marginTop="4dp"
+                        app:layout_constraintTop_toTopOf="@id/ivC8"
+
+                        />
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintStart_toEndOf="@id/ivC8"
+                        app:layout_constraintTop_toBottomOf="@id/head_tvC8"
+                        android:layout_marginStart="8.5dp"
+                        android:text="@string/SA_stringTB47"
+                        android:textStyle="bold"
+                        android:textColor="#aaaaaa"
+                        android:layout_marginTop="7dp"
+                        android:paddingBottom="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                        android:textSize="10dp"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--    ListItem 9-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toBottomOf="@id/LI_C8"
+                app:layout_constraintBottom_toTopOf="@id/LI_C10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/LI_C9"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/mpnbibs9"
+                        android:id="@+id/ivC9"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginBottom="6dp"
+                        />
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_marginLeft="30dp"
+
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/ivC9"
+                        android:id="@+id/head_tvC9"
+                        android:textSize="17dp"
+                        android:textColor="#3f3f3f"
+
+                        android:text="Profitable Cooking Oil\nManufacturing Business\nOpportunities"
+                        android:layout_marginTop="4dp"
+                        app:layout_constraintTop_toTopOf="@id/ivC9"
+                        />
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintStart_toEndOf="@id/ivC9"
+                        app:layout_constraintTop_toBottomOf="@id/head_tvC9"
+                        android:layout_marginStart="8.5dp"
+                        android:text="@string/SA_stringTB48"
+                        android:textStyle="bold"
+                        android:textColor="#aaaaaa"
+                        android:layout_marginTop="7dp"
+                        android:paddingBottom="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                        android:textSize="10dp"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--    ListItem 10-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toBottomOf="@id/LI_C9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/LI_C11"
+                android:id="@+id/LI_C10"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:src="@drawable/mpnbibs10"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/ivC10"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginBottom="6dp"
+                        />
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_marginLeft="30dp"
+
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/ivC10"
+                        android:id="@+id/head_tvC10"
+
+                        android:textSize="17dp"
+                        android:textColor="#3f3f3f"
+                        android:text="Profitable Plastic Product Manufacturing Business Opportunities"
+                        android:layout_marginTop="4dp"
+
+                        app:layout_constraintTop_toTopOf="@id/ivC10"
+                        />
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintStart_toEndOf="@id/ivC10"
+                        app:layout_constraintTop_toBottomOf="@id/head_tvC10"
+                        android:layout_marginStart="8.5dp"
+                        android:text="@string/SA_stringTB49"
+                        android:textStyle="bold"
+                        android:textColor="#aaaaaa"
+                        android:layout_marginTop="7dp"
+                        android:paddingBottom="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                        android:textSize="10dp"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--    ListItem 11-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toBottomOf="@id/LI_C10"
+                app:layout_constraintBottom_toTopOf="@id/LI_C12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/LI_C11"
+                android:layout_marginTop="10dp"
+
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:src="@drawable/mpnbibs11"
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/ivC11"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginBottom="6dp"
+                        />
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_marginLeft="30dp"
+
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/ivC11"
+                        android:id="@+id/head_tvC11"
+
+                        android:textSize="17dp"
+                        android:textColor="#3f3f3f"
+                        android:text="10 Profitable Designer \nSaree Making Business\nOpportunities"
+                        android:layout_marginTop="4dp"
+                        app:layout_constraintTop_toTopOf="@id/ivC11"
+
+                        />
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintStart_toEndOf="@id/ivC11"
+                        app:layout_constraintTop_toBottomOf="@id/head_tvC11"
+                        android:layout_marginStart="8.5dp"
+                        android:text="@string/SA_stringTB50"
+                        android:textStyle="bold"
+                        android:textColor="#aaaaaa"
+                        android:layout_marginTop="7dp"
+                        android:paddingBottom="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                        android:textSize="10dp"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!--    ListItem 12-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toBottomOf="@id/LI_C11"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/LI_C12"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="140dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:src="@drawable/mpnbibs12"
+                        android:layout_marginTop="6dp"
+                        android:id="@+id/ivC12"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginBottom="6dp"
+                        />
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_marginLeft="30dp"
+
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/ivC12"
+                        android:id="@+id/head_tvC12"
+                        android:textSize="17dp"
+
+
+                        android:textColor="#3f3f3f"
+                        android:text="20 Most Profitable \nMechanical Engineering\nBusiness Opportunities"
+                        android:layout_marginTop="4dp"
+                        app:layout_constraintTop_toTopOf="@id/ivC12"
+                        />
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintStart_toEndOf="@id/ivC12"
+                        app:layout_constraintTop_toBottomOf="@id/head_tvC12"
+                        android:layout_marginStart="8.5dp"
+                        android:text="@string/SA_stringTB51"
+                        android:textStyle="bold"
+                        android:textColor="#aaaaaa"
+                        android:layout_marginTop="7dp"
+                        android:paddingBottom="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                        android:textSize="10dp"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

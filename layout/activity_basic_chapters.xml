@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f5f8"
+
+    tools:context=".BasicChaptersActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/cv3"
+        android:paddingLeft="6.5dp"
+        android:paddingRight="6.5dp"
+        android:paddingTop="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#990100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingRight="30dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/BC_backiconreal"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="3.5dp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/back_chapters"
+                app:layout_constraintStart_toStartOf="parent"
+                android:gravity="center_vertical"
+                />
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:layout_constraintStart_toEndOf="@id/BC_backiconreal"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="Basics: Factor &amp; Suitabilities"
+                android:textSize="16dp"
+                tools:ignore="HardcodedText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv3"
+        android:layout_marginTop="64dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/llBCrealX"
+                >
+                <FrameLayout
+                    android:id="@+id/fl_adplaceholderBCreal"
+                    android:layout_width="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/llBCrealX"
+                android:layout_marginTop="15dp"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="35dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvHead_BC"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:textAllCaps="false"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        android:text="Best Ideas"
+                        android:textColor="#990100"
+                        android:layout_marginTop="20dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height=".6dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:background="#990100"
+                        android:id="@+id/hill"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="15dp"
+                        app:layout_constraintTop_toBottomOf="@id/tvHead_BC"
+                        tools:ignore="Orientation" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvBody_BC1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginTop="20dp"
+                        android:textColor="#3C3C3C"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="13.5dp"
+                        android:layout_marginRight="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/hill"
+                        android:text="Hi Hello Nanag Munda Kouwi Onthokpanida "
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+
+                        android:id="@+id/ivBC"
+                        app:layout_constraintTop_toBottomOf="@id/llBCrealY"
+
+
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toBottomOf="@id/tvBody_BC1"
+                        android:id="@+id/llBCrealY"
+                        >
+                        <FrameLayout
+                            android:id="@+id/fl_adplaceholderBCreal2"
+                            android:layout_width="match_parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginTop="10dp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvBody_BC2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginTop="20dp"
+                        android:textColor="#3C3C3C"
+                        android:textSize="13.5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ivBC"
+                        android:text="Hi Hello Nanag Munda Kouwi Onthokpanida "
+                        />
+
+
+
+
+
+
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

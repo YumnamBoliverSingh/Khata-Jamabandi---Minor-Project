@@ -1,0 +1,2000 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#f1f5f8"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:paddingTop="4dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingBottom="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/toolbar_drawable"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/nav_btn"
+                android:layout_width="23.5dp"
+                android:layout_height="23.5dp"
+                android:layout_marginLeft="15dp"
+
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+
+                android:src="@drawable/nav_btun"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:foregroundGravity="center_horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+
+                android:id="@+id/randCL"
+                app:layout_constraintBottom_toBottomOf="parent"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:id="@+id/text_image"
+                    android:text="Startup Ideas"
+                    android:textColor="@color/toolbar_red"
+                    android:textStyle="bold"
+                    android:textSize="24dp"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:id="@+id/searchIcon"
+
+
+
+                app:layout_constraintStart_toEndOf="@id/randCL"
+                app:layout_constraintTop_toTopOf="@id/randCL"
+                app:layout_constraintBottom_toBottomOf="@id/randCL"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/sicon"
+
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/notiIcon"
+                app:layout_constraintTop_toTopOf="@id/randCL"
+                android:src="@drawable/notifigation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/searchIcon"
+                app:layout_constraintBottom_toBottomOf="@id/randCL"
+
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height=".7dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="#990100"
+                android:layout_marginTop="3dp"
+                android:id="@+id/hill2"
+                android:layout_marginLeft="93dp"
+                android:layout_marginRight="93dp"
+                app:layout_constraintTop_toBottomOf="@id/randCL"
+                tools:ignore="Orientation" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="15dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:layout_constraintStart_toEndOf="@id/"-->
+        <!--            android:src="@drawable/check"-->
+        <!--/>-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:id="@+id/scvBabe"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/hSCV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/kaha"
+                >
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ScrollView
+                        android:background="#f1f5f8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/ivHSCV1"
+                                android:layout_width="335dp"
+                                android:layout_height="190dp"
+                                android:background="@drawable/image_cornaer_bckg_drawable"
+
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:src="@drawable/pubgroundedwithheadings"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/ivHSCV2"
+                                android:layout_width="400dp"
+                                android:layout_height="190dp"
+                                android:background="?attr/selectableItemBackground"
+
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:src="@drawable/homedeskroundedwithheadings"
+
+                                app:layout_constraintStart_toEndOf="@id/ivHSCV1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </ScrollView>
+
+                </HorizontalScrollView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1.2dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/zerox"
+                android:layout_marginTop="2dp"
+                android:id="@+id/kaha"
+                android:background="#990100"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal" />
+
+
+            <!-- 1st Native Activity -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/zerox"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+
+                >
+                <FrameLayout
+                    android:id="@+id/fl_adplaceholderAmain1"
+                    android:layout_width="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+            <!-- 2nd Native Activity -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/zero"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@id/chapters"
+                app:layout_constraintBottom_toTopOf="@id/articlesCL"
+
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+
+                >
+                <FrameLayout
+                    android:id="@+id/fl_adplaceholderAmain2"
+                    android:layout_width="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tutorial"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/hSCV">
+                <TextView
+                    android:id="@+id/god"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="CLICK HERE FOR STARTUP TUTORIALS"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+                <!--        <LinearLayout-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="0.3dp"-->
+                <!--            app:layout_constraintStart_toStartOf="parent"-->
+                <!--            app:layout_constraintEnd_toEndOf="parent"-->
+                <!--            app:layout_constraintTop_toTopOf="parent"-->
+                <!--            android:background="#000000"-->
+                <!--            android:layout_marginBottom="5dp"-->
+                <!--            android:layout_marginLeft="15dp"-->
+                <!--            android:layout_marginRight="15dp"-->
+                <!--            />-->
+                <LinearLayout
+                    android:id="@+id/topLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="59dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/ive" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/god" />
+
+
+                <ImageView
+                    android:id="@+id/ive"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/black"
+                    app:layout_constraintBottom_toTopOf="@id/ht"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="NotSibling" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+            <!--Articles ListView like ConstraintLayout-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ht"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toTopOf="@id/bal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tutorial"
+                tools:ignore="NotSibling">
+                <!-- hash tag number: 1-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/tvHT1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="2dp"
+
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:layout_constraintBottom_toTopOf="@id/tvHT6"
+                    app:layout_constraintEnd_toStartOf="@id/tvHT7"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/hashtags_boundary_drawable"
+                        android:paddingLeft="7dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="7dp"
+                        android:paddingBottom="2dp"
+                        android:text="Initial Public Offerings (IPO)"
+                        android:textColor="#000000"
+                        android:textSize="10dp"
+
+
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <!-- hash tag number: 2-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/tvHT2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="2dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+
+                    android:focusable="true"
+                    app:layout_constraintBottom_toBottomOf="@id/tvHT3"
+                    app:layout_constraintStart_toEndOf="@id/tvHT3"
+                    app:layout_constraintTop_toTopOf="@id/tvHT3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/hashtags_boundary_drawable"
+                        android:paddingLeft="7dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="7dp"
+                        android:paddingBottom="2dp"
+                        android:text="Daily Goals: Entrepreneur Mindset"
+                        android:textColor="#000000"
+                        android:textSize="10dp"
+
+
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- hash tag number: 3-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/tvHT3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="?attr/selectableItemBackground"
+
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tvHT2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvHT6"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/hashtags_boundary_drawable"
+                        android:paddingLeft="7dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="7dp"
+                        android:paddingBottom="2dp"
+                        android:text="Quick Ideas For The Hot Season"
+                        android:textColor="#000000"
+                        android:textSize="10dp"
+
+
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <!-- hash tag number: 4-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/tvHT4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="2dp"
+
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    app:layout_constraintBottom_toBottomOf="@id/tvHT7"
+                    app:layout_constraintStart_toEndOf="@+id/tvHT7"
+                    app:layout_constraintTop_toTopOf="@+id/tvHT7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/hashtags_boundary_drawable"
+                        android:paddingLeft="7dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="7dp"
+                        android:paddingBottom="2dp"
+                        android:text="BootStrap"
+                        android:textColor="#000000"
+                        android:textSize="10dp"
+
+
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- hash tag number: 5-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/tvHT5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="2dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+
+                    android:focusable="true"
+                    app:layout_constraintBottom_toBottomOf="@id/tvHT6"
+                    app:layout_constraintStart_toEndOf="@id/tvHT6"
+                    app:layout_constraintTop_toTopOf="@id/tvHT6">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/hashtags_boundary_drawable"
+                        android:paddingLeft="7dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="7dp"
+                        android:paddingBottom="2dp"
+                        android:text="Crowd Funding"
+                        android:textColor="#000000"
+                        android:textSize="10dp"
+
+
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- hash tag number: 6-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/tvHT6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="?attr/selectableItemBackground"
+
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:layout_constraintBottom_toTopOf="@id/tvHT3"
+
+                    app:layout_constraintEnd_toStartOf="@id/tvHT5"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toBottomOf="@id/tvHT1"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/hashtags_boundary_drawable"
+                        android:paddingLeft="7dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="7dp"
+                        android:paddingBottom="2dp"
+                        android:text="Scalable Enterprise"
+                        android:textColor="#000000"
+                        android:textSize="10dp"
+
+
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- hash tag number: 7-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/tvHT7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="2dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+
+                    android:focusable="true"
+                    app:layout_constraintBottom_toBottomOf="@id/tvHT1"
+                    app:layout_constraintStart_toEndOf="@id/tvHT1"
+                    app:layout_constraintTop_toTopOf="@+id/tvHT1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/hashtags_boundary_drawable"
+                        android:paddingLeft="7dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="7dp"
+                        android:paddingBottom="2dp"
+                        android:text="Lean"
+                        android:textColor="#000000"
+                        android:textSize="10dp"
+
+
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- hash tag number: 8-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/tvHT8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="2dp"
+
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    app:layout_constraintBottom_toBottomOf="@id/tvHT6"
+                    app:layout_constraintStart_toEndOf="@id/tvHT5"
+                    app:layout_constraintTop_toTopOf="@id/tvHT6"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/hashtags_boundary_drawable"
+                        android:paddingLeft="7dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="7dp"
+                        android:paddingBottom="2dp"
+                        android:text="How To Control Stress"
+                        android:textColor="#000000"
+                        android:textSize="10dp"
+
+
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/chapters"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@id/zero"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ht"
+
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Categories: "
+                    android:textSize="9dp"
+                    app:layout_constraintBottom_toBottomOf="@id/bal"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toTopOf="@id/bal" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/bal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="35dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/ch1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="6dp"
+
+                        app:layout_constraintEnd_toStartOf="@id/ch2"
+                        app:layout_constraintStart_toStartOf="parent"
+
+                        >
+
+                        <TextView
+                            android:layout_width="26.5dp"
+                            android:layout_height="31dp"
+                            android:background="@drawable/chapters_link_drawable"
+                            android:paddingLeft="9dp"
+                            android:paddingTop="6dp"
+                            android:paddingRight="9dp"
+                            android:paddingBottom="6dp"
+
+                            android:text="1"
+
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ch2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="6dp"
+
+
+                        app:layout_constraintEnd_toStartOf="@id/ch3"
+                        app:layout_constraintStart_toEndOf="@id/ch1">
+
+                        <TextView
+                            android:layout_width="26.5dp"
+                            android:layout_height="31dp"
+                            android:background="@drawable/chapters_link_drawable"
+                            android:paddingLeft="9dp"
+                            android:paddingTop="6dp"
+                            android:paddingRight="9dp"
+                            android:paddingBottom="6dp"
+
+                            android:text="2"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ch3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="6dp"
+
+
+                        app:layout_constraintEnd_toStartOf="@id/ch4"
+                        app:layout_constraintStart_toEndOf="@id/ch2">
+
+                        <TextView
+                            android:layout_width="26.5dp"
+                            android:layout_height="31dp"
+                            android:background="@drawable/chapters_link_drawable"
+                            android:paddingLeft="9dp"
+                            android:paddingTop="6dp"
+                            android:paddingRight="9dp"
+                            android:paddingBottom="6dp"
+
+                            android:text="3"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ch4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="6dp"
+
+                        app:layout_constraintEnd_toStartOf="@id/ch5"
+                        app:layout_constraintStart_toEndOf="@id/ch3">
+
+                        <TextView
+                            android:layout_width="26.5dp"
+                            android:layout_height="31dp"
+                            android:background="@drawable/chapters_link_drawable"
+                            android:paddingLeft="9dp"
+                            android:paddingTop="6dp"
+                            android:paddingRight="9dp"
+                            android:paddingBottom="6dp"
+
+                            android:text="4"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ch5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="6dp"
+
+                        app:layout_constraintEnd_toStartOf="@id/ch6"
+                        app:layout_constraintStart_toEndOf="@id/ch4">
+
+                        <TextView
+                            android:layout_width="26.5dp"
+                            android:layout_height="31dp"
+                            android:background="@drawable/chapters_link_drawable"
+                            android:paddingLeft="9dp"
+                            android:paddingTop="6dp"
+                            android:paddingRight="9dp"
+                            android:paddingBottom="6dp"
+
+                            android:text="5"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ch6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="6dp"
+
+
+                        app:layout_constraintEnd_toStartOf="@id/ch7"
+                        app:layout_constraintStart_toEndOf="@id/ch5">
+
+                        <TextView
+                            android:layout_width="26.5dp"
+                            android:layout_height="31dp"
+                            android:background="@drawable/chapters_link_drawable"
+                            android:paddingLeft="9dp"
+                            android:paddingTop="6dp"
+                            android:paddingRight="9dp"
+                            android:paddingBottom="6dp"
+
+                            android:text="6"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ch7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="6dp"
+
+                        app:layout_constraintEnd_toStartOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/ch6">
+
+                        <TextView
+                            android:layout_width="26.5dp"
+                            android:layout_height="31dp"
+                            android:background="@drawable/chapters_link_drawable"
+                            android:paddingLeft="9dp"
+                            android:paddingTop="6dp"
+                            android:paddingRight="9dp"
+                            android:paddingBottom="6dp"
+
+                            android:text="7"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ch8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="6dp"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/ch7">
+
+                        <TextView
+                            android:layout_width="26.5dp"
+                            android:layout_height="31dp"
+                            android:background="@drawable/chapters_link_drawable"
+                            android:paddingLeft="9dp"
+                            android:paddingTop="6dp"
+                            android:paddingRight="9dp"
+                            android:paddingBottom="6dp"
+
+                            android:text="..."
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/articlesCL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintTop_toBottomOf="@id/zero"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="39dp"
+                    android:background="#087E00"
+                    app:layout_constraintBottom_toTopOf="@id/txt"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Top Articles "
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/scv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ll" />
+                <ImageView android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintStart_toEndOf="@id/txt"
+                    android:src="@drawable/check"
+                    android:layout_marginLeft="3dp"
+                    app:layout_constraintTop_toTopOf="@id/txt"
+                    app:layout_constraintBottom_toBottomOf="@id/txt"
+                    />
+                <ScrollView
+                    android:id="@+id/scv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="70dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <!--like LV article item CL 1 -->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/likeLV_CV_article1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+
+
+                            app:layout_constraintBottom_toTopOf="@id/likeLV_CV_article2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/haslb1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="100dp"
+                                android:text="How's A Startup Like?"
+                                android:textColor="#3f3f3f"
+                                android:textSize="17dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/hasll1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="140dp"
+                                android:layout_marginBottom="38dp"
+                                android:text="What are the most important aspects you should experiment (and validate) with while launching your startup? Steve Blan..."
+                                android:textColor="#AAAAAA"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/haslb1" />
+
+                            <ImageView
+                                android:id="@+id/iv1"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/one"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="April, 2022,   12:05 AM   IST"
+                                android:textSize="8dp"
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toTopOf="@id/ll1"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+
+                            <LinearLayout
+                                android:id="@+id/ll1"
+                                android:layout_width="match_parent"
+                                android:layout_height="1.2dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="#c5c5c5"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:ignore="Orientation" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <!--like LV article item CL 2 -->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/likeLV_CV_article2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+
+
+                            app:layout_constraintBottom_toTopOf="@id/likeLV_CV_article3"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/likeLV_CV_article1"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/haslb2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="100dp"
+                                android:text="Are Entrepreneurs Leaders?\nOr, Visionary?"
+                                android:textColor="#3f3f3f"
+                                android:textSize="17dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/hasll2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="140dp"
+                                android:layout_marginBottom="38dp"
+                                android:text="Every entrepreneur has a vision, but few are visionary. **The four key ingredients to be considered a true visionary..."
+                                android:textColor="#AAAAAA"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/haslb2" />
+
+                            <ImageView
+                                android:id="@+id/iv2"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/eleven"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="April, 2022,   12:06 AM   IST"
+                                android:textSize="8dp"
+
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toTopOf="@id/ll2"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+
+                            <LinearLayout
+                                android:id="@+id/ll2"
+                                android:layout_width="match_parent"
+                                android:layout_height="1.2dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="#c5c5c5"
+
+                                android:orientation="horizontal"
+                                app:layout_constraintBottom_toBottomOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <!--like LV article item CL 3 -->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/likeLV_CV_article3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+
+                            app:layout_constraintBottom_toTopOf="@id/likeLV_CV_article4"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/likeLV_CV_article2"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/haslb3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="100dp"
+                                android:text="Flipkart was incorporated in Singapore, Not in India. Interesting?"
+                                android:textColor="#3f3f3f"
+                                android:textSize="17dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/hasll3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="140dp"
+                                android:layout_marginBottom="38dp"
+                                android:text="First time i am learning of this.
+
+There are only 4 reasons i can think of
+
+(A) Speculative IPO - Indian SEBI does not allow low..."
+                                android:textColor="#AAAAAA"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/haslb3" />
+
+                            <ImageView
+                                android:id="@+id/iv3"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/three"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="April, 2022,   12:09 AM   IST"
+                                android:textSize="8dp"
+
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toTopOf="@id/ll3"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+
+                            <LinearLayout
+                                android:id="@+id/ll3"
+                                android:layout_width="match_parent"
+                                android:layout_height="1.2dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="#c5c5c5"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:ignore="Orientation" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <!--like LV article item CL 4 -->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/likeLV_CV_article4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+
+                            app:layout_constraintBottom_toTopOf="@id/likeLV_CV_article5"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/likeLV_CV_article3"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/haslb4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="100dp"
+                                android:text="Are Motivations &amp; Mindset Necessary?"
+                                android:textColor="#3f3f3f"
+                                android:textSize="17dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/hasll4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="140dp"
+                                android:layout_marginBottom="38dp"
+                                android:text="...High-impact mindset, low-impact mindset, social-impact mindset, and self-impact mindset. Which One are ..."
+                                android:textColor="#AAAAAA"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/haslb4" />
+
+                            <ImageView
+                                android:id="@+id/iv4"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/thirteen"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="April, 2022,   12:25 AM   IST"
+                                android:textSize="8dp"
+
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toTopOf="@id/ll4"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+
+                            <LinearLayout
+                                android:id="@+id/ll4"
+                                android:layout_width="match_parent"
+                                android:layout_height="1.2dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="#c5c5c5"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:ignore="Orientation" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <!--like LV article item CL 5 -->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/likeLV_CV_article5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+
+                            app:layout_constraintBottom_toTopOf="@id/likeLV_CV_article6"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/likeLV_CV_article4"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/haslb5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="100dp"
+                                android:text="The Four Cringe - Worthy mistakes Too many Startups Make With Data."
+                                android:textColor="#3f3f3f"
+                                android:textSize="17dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/hasll5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="140dp"
+                                android:layout_marginBottom="38dp"
+                                android:text="@string/http1"
+                                android:textColor="#AAAAAA"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/haslb5" />
+
+                            <ImageView
+                                android:id="@+id/iv5"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/five"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="April, 2022,   08:30 AM   IST"
+                                android:textSize="8dp"
+
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toTopOf="@id/ll5"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+
+                            <LinearLayout
+                                android:id="@+id/ll5"
+                                android:layout_width="match_parent"
+                                android:layout_height="1.2dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="#c5c5c5"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:ignore="Orientation" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <!--like LV article item CL 6 -->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/likeLV_CV_article6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+
+                            app:layout_constraintBottom_toTopOf="@id/likeLV_CV_article7"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/likeLV_CV_article5"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/haslb6"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="100dp"
+                                android:text="How to Develop Content For Every Stage Of The Customer Journey?"
+                                android:textColor="#3f3f3f"
+                                android:textSize="17dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/hasll6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="140dp"
+                                android:layout_marginBottom="38dp"
+                                android:text="@string/http2"
+                                android:textColor="#AAAAAA"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/haslb6" />
+
+                            <ImageView
+                                android:id="@+id/iv6"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/six"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="April, 2022,   08:32 AM   IST"
+
+                                android:textSize="8dp"
+
+
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toTopOf="@id/ll6"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+
+                            <LinearLayout
+                                android:id="@+id/ll6"
+                                android:layout_width="match_parent"
+                                android:layout_height="1.2dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="#c5c5c5"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:ignore="Orientation" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <!--like LV article item CL 7 -->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/likeLV_CV_article7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+
+                            app:layout_constraintBottom_toTopOf="@id/likeLV_CV_article8"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/likeLV_CV_article6"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/haslb7"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="100dp"
+                                android:text="The State Of The SAAS Economy"
+                                android:textColor="#3f3f3f"
+                                android:textSize="17dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/hasll7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="140dp"
+                                android:layout_marginBottom="38dp"
+                                android:text="@string/http3"
+                                android:textColor="#AAAAAA"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/haslb7" />
+
+                            <ImageView
+                                android:id="@+id/iv7"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/seven"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="April, 2022,   08:35 AM   IST"
+                                android:textSize="8dp"
+
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toTopOf="@id/ll7"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+
+                            <LinearLayout
+                                android:id="@+id/ll7"
+                                android:layout_width="match_parent"
+                                android:layout_height="1.2dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="#c5c5c5"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:ignore="Orientation" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <!--like LV article item CL 8 -->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/likeLV_CV_article8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+
+                            app:layout_constraintBottom_toTopOf="@id/likeLV_CV_article9"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/likeLV_CV_article7"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/haslb8"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="100dp"
+                                android:text="These 13 Exercises Will Prepare You For Work's Toughest Situations."
+                                android:textColor="#3f3f3f"
+                                android:textSize="17dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/hasll8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="140dp"
+                                android:layout_marginBottom="38dp"
+                                android:text="@string/http4"
+                                android:textColor="#AAAAAA"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/haslb8" />
+
+                            <ImageView
+                                android:id="@+id/iv8"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/eight"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="April, 2022,   08:39 AM   IST"
+                                android:textSize="8dp"
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toTopOf="@id/ll8"
+
+                                app:layout_constraintStart_toStartOf="parent" />
+
+
+                            <LinearLayout
+                                android:id="@+id/ll8"
+                                android:layout_width="match_parent"
+                                android:layout_height="1.2dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="#c5c5c5"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:ignore="Orientation" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <!--like LV article item CL 9 -->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/likeLV_CV_article9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+
+                            app:layout_constraintBottom_toTopOf="@id/likeLV_CV_article10"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/likeLV_CV_article8"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/haslb9"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="100dp"
+                                android:text="Note To Self, On Time Management "
+                                android:textColor="#3f3f3f"
+                                android:textSize="17dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/hasll9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="140dp"
+                                android:layout_marginBottom="38dp"
+                                android:text="@string/http5"
+                                android:textColor="#AAAAAA"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/haslb9" />
+
+                            <ImageView
+                                android:id="@+id/iv9"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/nine"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="April, 2022,   08:41 AM   IST"
+                                android:textSize="8dp"
+
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toTopOf="@id/ll9"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+
+                            <LinearLayout
+                                android:id="@+id/ll9"
+                                android:layout_width="match_parent"
+                                android:layout_height="1.2dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="#c5c5c5"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:ignore="Orientation" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <!--like LV article item CL 10 -->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/likeLV_CV_article10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+
+                            app:layout_constraintBottom_toTopOf="@id/likeLV_CV_article11"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/likeLV_CV_article9"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/haslb10"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="100dp"
+                                android:text="From an Internal Basecamp Announcement \nRe: Pings/IMS "
+                                android:textColor="#3f3f3f"
+                                android:textSize="17dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/hasll10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="140dp"
+                                android:layout_marginBottom="38dp"
+                                android:text="@string/http6"
+                                android:textColor="#AAAAAA"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/haslb10" />
+
+                            <ImageView
+                                android:id="@+id/iv10"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/four"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="April, 2022,   08:43 AM   IST"
+                                android:textSize="8dp"
+
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toTopOf="@id/ll10"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+
+                            <LinearLayout
+                                android:id="@+id/ll10"
+                                android:layout_width="match_parent"
+                                android:layout_height="1.2dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="#c5c5c5"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:ignore="Orientation" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <!--like LV article item CL  11-->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/likeLV_CV_article11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+
+                            app:layout_constraintBottom_toTopOf="@id/likeLV_CV_article12"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/likeLV_CV_article10"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/haslb11"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="100dp"
+                                android:text="How Shopify Increased Revenue 90% in 365 days"
+                                android:textColor="#3f3f3f"
+                                android:textSize="17dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/hasll11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="140dp"
+                                android:layout_marginBottom="38dp"
+                                android:text="@string/http7"
+                                android:textColor="#AAAAAA"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/haslb11" />
+
+                            <ImageView
+                                android:id="@+id/iv11"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ten"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="April, 2022,   08:49 AM   IST"
+                                android:textSize="8dp"
+
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toTopOf="@id/ll11"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+
+                            <LinearLayout
+                                android:id="@+id/ll11"
+                                android:layout_width="match_parent"
+                                android:layout_height="1.2dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="#c5c5c5"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:ignore="Orientation" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <!--like LV article item CL 12 -->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/likeLV_CV_article12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+
+                            app:layout_constraintBottom_toTopOf="@id/likeLV_CV_article13"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/likeLV_CV_article11"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/haslb12"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="100dp"
+                                android:text="21 Customer Acquisition Strategies to win New Customers"
+                                android:textColor="#3f3f3f"
+                                android:textSize="17dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/hasll12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="140dp"
+                                android:layout_marginBottom="38dp"
+                                android:text="@string/http8"
+                                android:textColor="#AAAAAA"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+
+                                app:layout_constraintTop_toBottomOf="@id/haslb12" />
+
+                            <ImageView
+                                android:id="@+id/iv12"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/two"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="April, 2022,   08:55 AM   IST"
+                                android:textSize="8dp"
+
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toTopOf="@id/ll12"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+
+                            <LinearLayout
+                                android:id="@+id/ll12"
+                                android:layout_width="match_parent"
+                                android:layout_height="1.2dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="#c5c5c5"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:ignore="Orientation" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <!--like LV article item CL 13 -->
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/likeLV_CV_article13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/likeLV_CV_article12"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/haslb13"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="100dp"
+                                android:text="The Iceberg Theory of User Feedback."
+                                android:textColor="#3f3f3f"
+                                android:textSize="17dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/hasll13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="140dp"
+                                android:layout_marginBottom="38dp"
+                                android:text="@string/http9"
+                                android:textColor="#AAAAAA"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/haslb13" />
+
+                            <ImageView
+                                android:id="@+id/iv13"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/twelve"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="April, 2022,   11:30 AM   IST"
+                                android:textSize="8dp"
+
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toTopOf="@id/ll13"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+
+                            <LinearLayout
+                                android:id="@+id/ll13"
+                                android:layout_width="match_parent"
+                                android:layout_height="1.2dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="#c5c5c5"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:ignore="Orientation" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </ScrollView>
+
+                <ProgressBar
+                    android:layout_width="69dp"
+                    android:layout_height="69dp"
+                    app:layout_constraintTop_toBottomOf="@id/scv"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:id="@+id/pBArDiscussions"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="10dp"
+                    android:indeterminate="true"
+                    android:indeterminateTint="#000000"
+                    android:indeterminateTintMode="src_in"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

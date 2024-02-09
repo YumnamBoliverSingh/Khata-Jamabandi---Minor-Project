@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f1f5f8"
+
+    android:layout_height="match_parent"
+    tools:context=".LCoolZTOActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/cvz"
+
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#990100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ZTO_backicon"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="3.5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/back_chapters"
+                app:layout_constraintStart_toStartOf="parent"
+                android:gravity="center_vertical"
+
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="45dp"
+                app:layout_constraintStart_toEndOf="@id/ZTO_backicon"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="Zero To IPO: An Approach, \nor a Diversion?"
+                android:textSize="18dp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:id="@+id/llZTO"
+                    >
+                    <FrameLayout
+                        android:id="@+id/fl_adplaceholderZTO"
+                        android:layout_width="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/llZTO"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/kaya"
+                    android:background="#990100"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    tools:ignore="Orientation" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/kaya"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/sexycbz"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    >
+                    <!-- Topic 1 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#83888888"
+                        android:textStyle="bold"
+                        android:id="@+id/tvZTO1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:clickable="true"
+
+                        android:layout_marginTop="14dp"
+                        android:textColor="#505050"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:paddingLeft="10dp"
+                        android:text="2.0.1.  Alternative Routes &amp; Destinations"
+                        android:gravity="center_vertical"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/tvZTO2"
+                        />
+                    <!-- Topic 2 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#83888888"
+                        android:textStyle="bold"
+                        android:id="@+id/tvZTO2"
+                        android:layout_marginTop="14dp"
+                        android:textColor="#505050"
+                        android:clickable="true"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:paddingLeft="10dp"
+                        android:text="2.0.2.  What about Just Building a profitable Business?"
+                        android:gravity="center_vertical"
+                        app:layout_constraintTop_toBottomOf="@id/tvZTO1"
+                        app:layout_constraintBottom_toTopOf="@id/tvZTO3"
+                        />
+                    <!-- Topic 3 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#83888888"
+                        android:textStyle="bold"
+                        android:id="@+id/tvZTO3"
+                        android:layout_marginTop="14dp"
+                        android:textColor="#505050"
+                        android:clickable="true"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:paddingLeft="10dp"
+                        android:text="2.0.3.  A Setting for your Journey - StartUp Island\n            and can affect your Diet!"
+                        android:gravity="center_vertical"
+                        app:layout_constraintTop_toBottomOf="@id/tvZTO2"
+                        app:layout_constraintBottom_toTopOf="@id/tvZTO4"
+                        />
+                    <!-- Topic 4 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#83888888"
+                        android:textStyle="bold"
+                        android:id="@+id/tvZTO4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="14dp"
+                        android:textColor="#505050"
+                        android:clickable="true"
+
+                        android:paddingLeft="10dp"
+                        android:text="2.0.4.  Poor Preparation Leads to Poor Performance"
+                        android:gravity="center_vertical"
+                        app:layout_constraintTop_toBottomOf="@id/tvZTO3"
+                        app:layout_constraintBottom_toTopOf="@id/tvZTO5"
+                        />
+                    <!-- Topic 5 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#83888888"
+                        android:textStyle="bold"
+                        android:layout_marginTop="14dp"
+                        android:textColor="#505050"
+                        android:clickable="true"
+
+                        android:id="@+id/tvZTO5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:paddingLeft="10dp"
+                        android:text="2.0.5.  Seven Point Travel Plan"
+                        android:gravity="center_vertical"
+                        app:layout_constraintTop_toBottomOf="@id/tvZTO4"
+                        app:layout_constraintBottom_toTopOf="@id/tvZTO6"
+                        />
+                    <!-- Topic 6 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#83888888"
+                        android:textStyle="bold"
+                        android:id="@+id/tvZTO6"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="14dp"
+                        android:textColor="#505050"
+                        android:clickable="true"
+
+                        android:paddingLeft="10dp"
+                        android:text="2.0.6.  Targeting Your Destination"
+                        android:gravity="center_vertical"
+                        app:layout_constraintTop_toBottomOf="@id/tvZTO5"
+                        app:layout_constraintBottom_toTopOf="@id/tvZTO7"
+                        />
+                    <!-- Topic 7 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#83888888"
+                        android:textStyle="bold"
+                        android:id="@+id/tvZTO7"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="14dp"
+                        android:textColor="#505050"
+                        android:clickable="true"
+
+                        android:text="2.0.7.  Founding Partners"
+                        android:gravity="center_vertical"
+                        app:layout_constraintTop_toBottomOf="@id/tvZTO6"
+                        app:layout_constraintBottom_toTopOf="@id/tvZTO8"
+                        />
+                    <!-- Topic 8 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#83888888"
+                        android:textStyle="bold"
+                        android:id="@+id/tvZTO8"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="14dp"
+                        android:textColor="#505050"
+                        android:clickable="true"
+
+                        android:paddingLeft="10dp"
+                        android:text="2.0.8.  Maintaining Momentum"
+                        android:gravity="center_vertical"
+                        app:layout_constraintBottom_toTopOf="@id/tvZTO9"
+                        app:layout_constraintTop_toBottomOf="@id/tvZTO7"
+                        />
+                    <!-- Topic 9 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#83888888"
+                        android:textStyle="bold"
+                        android:id="@+id/tvZTO9"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="14dp"
+                        android:textColor="#505050"
+                        android:clickable="true"
+
+                        android:paddingLeft="10dp"
+                        android:text="2.0.9.  Taking Your Bearings"
+                        android:gravity="center_vertical"
+                        app:layout_constraintBottom_toTopOf="@id/tvZTO10"
+                        app:layout_constraintTop_toBottomOf="@id/tvZTO8"
+                        />
+                    <!-- Topic 10 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:background="#83888888"
+                        android:textStyle="bold"
+                        android:id="@+id/tvZTO10"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="14dp"
+                        android:textColor="#505050"
+                        android:clickable="true"
+                        android:layout_marginBottom="15dp"
+
+                        android:paddingLeft="10dp"
+                        android:text="2.0.10.  What's The Best Route For You  \n            &amp; Your Product"
+                        android:gravity="center_vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvZTO9"
+                        />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

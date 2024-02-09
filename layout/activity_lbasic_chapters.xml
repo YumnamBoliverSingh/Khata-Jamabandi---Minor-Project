@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f5f8"
+
+    tools:context=".LBasicChaptersActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/cv"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#990100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/BC_backicon"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="3.5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/back_chapters"
+                app:layout_constraintStart_toStartOf="parent"
+                android:gravity="center_vertical"
+
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="45dp"
+                app:layout_constraintStart_toEndOf="@id/BC_backicon"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="Basics: Factories &amp; Suitabilities"
+                android:textSize="16dp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:id="@+id/llALBC"
+                    >
+                    <FrameLayout
+                        android:id="@+id/fl_adplaceholderALBC"
+                        android:layout_width="match_parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/llALBC"
+                    android:layout_marginTop="5dp"
+                    android:background="#990100"
+                    android:layout_marginLeft="5dp"
+                    app:layout_constraintBottom_toTopOf="@id/sexy1"
+                    android:layout_marginRight="5dp"
+                    />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    app:layout_constraintTop_toBottomOf="@id/llALBC"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/sexy1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    >
+
+
+                    <!-- Topic 1 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#83888888"
+                        android:textStyle="bold"
+                        android:id="@+id/tvALBC1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginTop="14dp"
+                        android:clickable="true"
+
+                        android:textColor="#505050"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:paddingLeft="10dp"
+                        android:text="1.0.1.  7 Reasons Why You Should Start A Business"
+                        android:gravity="center_vertical"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@id/tvALBC2"
+                        />
+                    <!-- Topic 2 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#83888888"
+                        android:textStyle="bold"
+                        android:id="@+id/tvALBC2"
+                        android:layout_marginTop="14dp"
+                        android:textColor="#505050"
+                        android:clickable="true"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:paddingLeft="10dp"
+                        android:text="1.0.2.  Meaning of Partnership"
+                        android:gravity="center_vertical"
+                        app:layout_constraintTop_toBottomOf="@id/tvALBC1"
+                        app:layout_constraintBottom_toTopOf="@id/tvALBC3"
+                        />
+                    <!-- Topic 3 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#83888888"
+                        android:textStyle="bold"
+                        android:id="@+id/tvALBC3"
+                        android:layout_marginTop="14dp"
+                        android:textColor="#505050"
+                        android:clickable="true"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:paddingLeft="10dp"
+                        android:text="1.0.3.  13 Secrets To Grow Quickly Into A Company"
+                        android:gravity="center_vertical"
+                        app:layout_constraintTop_toBottomOf="@id/tvALBC2"
+                        app:layout_constraintBottom_toTopOf="@id/tvALBC4"
+                        />
+                    <!-- Topic 4 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#83888888"
+                        android:textStyle="bold"
+                        android:id="@+id/tvALBC4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="14dp"
+                        android:textColor="#505050"
+                        android:clickable="true"
+
+                        android:paddingLeft="10dp"
+                        android:text="1.0.4.  Working With Business Capital"
+                        android:gravity="center_vertical"
+                        app:layout_constraintTop_toBottomOf="@id/tvALBC3"
+                        app:layout_constraintBottom_toTopOf="@id/tvALBC5"
+                        />
+                    <!-- Topic 5 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#83888888"
+                        android:textStyle="bold"
+                        android:layout_marginTop="14dp"
+                        android:textColor="#505050"
+                        android:clickable="true"
+
+                        android:id="@+id/tvALBC5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:paddingLeft="10dp"
+                        android:text="1.0.5.  6 Stages OF A Startup &amp; What You Should \n\t\t\t\t\t  Be Doing At Each One"
+                        android:gravity="center_vertical"
+                        app:layout_constraintTop_toBottomOf="@id/tvALBC4"
+                        app:layout_constraintBottom_toTopOf="@id/tvALBC6"
+                        />
+                    <!-- Topic 6 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#83888888"
+                        android:textStyle="bold"
+                        android:id="@+id/tvALBC6"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="14dp"
+                        android:textColor="#505050"
+                        android:clickable="true"
+
+                        android:paddingLeft="10dp"
+                        android:text="1.0.6.  Why Is Budgetting Important For StartUp\n\t\t\t\t\t Success"
+                        android:gravity="center_vertical"
+                        app:layout_constraintTop_toBottomOf="@id/tvALBC5"
+                        app:layout_constraintBottom_toTopOf="@id/tvALBC7"
+                        />
+                    <!-- Topic 7 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#83888888"
+                        android:textStyle="bold"
+                        android:id="@+id/tvALBC7"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="14dp"
+                        android:textColor="#505050"
+                        android:clickable="true"
+
+                        android:text="1.0.7.  Cash Flow Management"
+                        android:gravity="center_vertical"
+                        app:layout_constraintTop_toBottomOf="@id/tvALBC6"
+                        app:layout_constraintBottom_toTopOf="@id/tvALBC8"
+                        />
+                    <!-- Topic 8 -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="#83888888"
+                        android:textStyle="bold"
+                        android:id="@+id/tvALBC8"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginBottom="30dp"
+                        android:clickable="true"
+
+                        android:textColor="#505050"
+                        android:paddingLeft="10dp"
+                        android:text="1.0.8.  Problem Solving Techniques"
+                        android:gravity="center_vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvALBC7"
+                        />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
